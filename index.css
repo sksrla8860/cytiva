@@ -1,0 +1,101 @@
+#greenchallengeBox{color: #333; font-weight: normal; letter-spacing: -1px; line-height: 1.5; }
+
+.clearfix:after{content: ''; display: block; clear: both; }
+
+#greenchallengeBox *{box-sizing: border-box; font-family: 'NotoSansKR'; }
+#greenchallengeBox .hideText{width: 0; height: 0; display: block; overflow: hidden; }
+#greenchallengeBox .bold{font-weight: bold; }
+#greenchallengeBox .light{font-weight: lighter; }
+#greenchallengeBox .color1{color: #00886f; }
+#greenchallengeBox .color2{color: #18181b; }
+#greenchallengeBox .color3{color: #fdf45b; }
+#greenchallengeBox .color4{color: #fff; }
+#greenchallengeBox .color5{color: #92ddb4; }
+#greenchallengeBox .color6{color: #e8e8e8; }
+#greenchallengeBox .txt_l{text-align: left; }
+#greenchallengeBox .txt_c{text-align: center; }
+#greenchallengeBox .dispalyB{display: block; }
+
+#greenchallengeBox h2{font-size: 72px; text-align: center; }
+#greenchallengeBox h3{font-size: 48px; text-align: center; }
+#greenchallengeBox h4{font-size: 28px; text-align: center; }
+#greenchallengeBox h5{font-size: 26px; text-align: center; }
+#greenchallengeBox h6{font-size: 24px; text-align: center; }
+#greenchallengeBox p{font-size: 20px; }
+#greenchallengeBox span{font-size: 18px; }
+
+#greenchallengeBox > header{margin: 0 auto; height: 80px; }
+#greenchallengeBox > header > h1{display: table; height: 100%; }
+#greenchallengeBox > header > h1 > a{display: table-cell; vertical-align: middle; }
+
+#greenchallengeBox > section{padding: 72px 0; }
+#greenchallengeBox > section > div{max-width: 98%; margin: 0 auto; }
+#greenchallengeBox > section > div > * > span{font-size: inherit; }
+
+#greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01.png); background-position: center bottom; background-repeat: repeat-x; padding-top: 80px; padding-bottom: 380px; background-color: #e8e8e8; }
+#challenge01 h2{margin: 28px auto 42px; }
+#challenge01 h6{margin-bottom: 36px;}
+
+#challenge02{background-color: #076251; }
+#challenge02 img{margin: 0 auto; display: block; }
+
+#challenge03{background-color: #99cfc5; }
+#challenge03 h3{margin-bottom: 52px; }
+#challenge03 ul{}
+#challenge03 ul > li{float: left; max-width: 50%; min-width: 33.333333%; }
+#challenge03 ul > li span{text-align: center; }
+#challenge03 > div > span{display: block; }
+
+#challenge04 > div{}
+#challenge04_2 > h4{font-size: 36px; text-align: left; margin-bottom: 30px; }
+#challenge04_2 > p{margin-bottom: 30px; }
+#challenge04_2 > a{border-bottom: 1px solid #18181b; display: inline-block; }
+#challenge04_2 > a > p{}
+
+#challenge05{background-color: #076251; }
+#challenge05 > div > p{max-width: 230px; width: 30%; float: left; opacity: .7; }
+#challenge05 > div > ul{width: 70%; float: left; opacity: .7; }
+#challenge05 > div > ul > li{font-weight: lighter; }
+
+
+@media all and (min-width: 480px){
+    #greenchallengeBox{}
+}
+@media all and (min-width: 768px){
+    #greenchallengeBox{}
+    #greenchallengeBox > section{padding: 72px 0; }
+    #greenchallengeBox h2{font-size: 72px; }
+    #greenchallengeBox h3{font-size: 48px; }
+    #greenchallengeBox h4{font-size: 28px; }
+    #greenchallengeBox h5{font-size: 26px; }
+    #greenchallengeBox h6{font-size: 24px; }
+    #greenchallengeBox p{font-size: 20px; }
+    #greenchallengeBox span{font-size: 18px; }
+    
+    #greenchallengeBox > #challenge01{padding-top: 80px; padding-bottom: 380px; }
+    #challenge01 h2{margin: 28px auto 42px; }
+    #challenge01 h6{margin-bottom: 36px;}
+    
+    #challenge03{}
+    #challenge03 ul{}
+    #challenge03 ul > li{max-width: 33.333333%; position: relative; margin-bottom: 45px; display: table; }
+    #challenge03 ul > li > .imgBox{width: 100px; height: 100px; border-radius: 100px; background-color: #037560; border: 3px solid #e8e8e8; position: absolute; margin-top: -20px; left: 25px; text-align: center; }
+    #challenge03 ul > li > .imgBox > img{margin-top: 15px; }
+    #challenge03 ul > li > .textBox{width: 294px; height: 120px; border-radius: 120px;  background-color: #e8e8e8; margin-left: 35px; display: table-cell; vertical-align: middle; }
+    
+    #challenge04{}
+    #challenge04 div{}
+    #challenge04_1{float: right; }
+    #challenge04_1 > img{}
+    #challenge04_2{float: left; }
+}
+@media all and (min-width: 1280px){
+    #greenchallengeBox{}
+    #greenchallengeBox > header{max-width: 1040px; }
+    #greenchallengeBox > section > div{max-width: 1040px; }
+}
+
+
+
+
+
