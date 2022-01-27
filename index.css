@@ -14,37 +14,51 @@
 #greenchallengeBox .color6{color: #e8e8e8; }
 #greenchallengeBox .txt_l{text-align: left; }
 #greenchallengeBox .txt_c{text-align: center; }
+#greenchallengeBox .dispalyIB{display: inline-block; }
 #greenchallengeBox .dispalyB{display: block; }
 
-#greenchallengeBox h2{font-size: 72px; text-align: center; }
-#greenchallengeBox h3{font-size: 48px; text-align: center; }
-#greenchallengeBox h4{font-size: 28px; text-align: center; }
-#greenchallengeBox h5{font-size: 26px; text-align: center; }
-#greenchallengeBox h6{font-size: 24px; text-align: center; }
-#greenchallengeBox p{font-size: 20px; }
-#greenchallengeBox span{font-size: 18px; }
+#greenchallengeBox h2{font-size: 38px; text-align: center; }
+#greenchallengeBox h3{font-size: 24px; text-align: center; }
+#greenchallengeBox h4{font-size: 20px; text-align: center; }
+#greenchallengeBox h5{font-size: 16px; text-align: center; }
+#greenchallengeBox h6{font-size: 14px; text-align: center; }
+#greenchallengeBox p{font-size: 11px; }
+#greenchallengeBox span{font-size: 10px; }
 
 #greenchallengeBox > header{margin: 0 auto; height: 80px; }
 #greenchallengeBox > header > h1{display: table; height: 100%; }
 #greenchallengeBox > header > h1 > a{display: table-cell; vertical-align: middle; }
 
-#greenchallengeBox > section{padding: 72px 0; }
-#greenchallengeBox > section > div{max-width: 98%; margin: 0 auto; }
-#greenchallengeBox > section > div > * > span{font-size: inherit; }
+#greenchallengeBox > section{padding: 72px 0; overflow: hidden; }
+#greenchallengeBox > section > div{max-width: 95%; margin: 0 auto; }
+#greenchallengeBox > section > div > * span{font-size: inherit; }
 
 #greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01.png); background-position: center bottom; background-repeat: repeat-x; padding-top: 80px; padding-bottom: 380px; background-color: #e8e8e8; }
 #challenge01 h2{margin: 28px auto 42px; }
 #challenge01 h6{margin-bottom: 36px;}
 
 #challenge02{background-color: #076251; }
-#challenge02 img{margin: 0 auto; display: block; }
+#challenge02 > div > img{margin: 0 auto 20px; display: block; width: 100%; max-width: 679px; }
+#challenge02 > div > ul{background-color: rgba(0, 136, 111, .5); border-radius: 6px; padding: 10px; }
+#challenge02 > div > ul > li{}
+#challenge02 > div > ul > li > h5{background-color: #18181b; border-radius: 20px; color: #fff; display: inline-block; width: 86px; }
+#challenge02 > div > ul > li:after{content: ''; display: block; clear: both; }
+#challenge02 > div > ul .challengeInfor{}
+#challenge02 > div > ul .challengeInfor > li{background-color: rgba(235, 255, 175,.3); border-radius: 4px; width: 160px; margin: 18px auto; padding-bottom: 12px; max-width: 236px; }
+#challenge02 > div > ul .challengeInfor > li img{max-width: 175px; width: 80%; object-fit: contain; }
+#challenge02 > div > ul .challengeInfor > li img:first-child{width: 20px; }
+#challenge02 > div > ul .challengeInforNumber{background-color: #076251; color: #fff; margin: 0 auto; width: 36px; height: 26px; text-align: center; line-height: 36px; }
 
 #challenge03{background-color: #99cfc5; }
 #challenge03 h3{margin-bottom: 52px; }
 #challenge03 ul{}
-#challenge03 ul > li{float: left; max-width: 50%; min-width: 33.333333%; }
+#challenge03 ul > li{width: 80%; min-width: 33.333333%; max-width: 320px; margin: 0 auto; }
 #challenge03 ul > li span{text-align: center; }
 #challenge03 > div > span{display: block; }
+#challenge03 ul > li > .imgBox{width: 80px; height: 80px; border-radius: 100px; background-color: #037560; border: 3px solid #e8e8e8; position: absolute; margin-top: -20px; left: 25px; text-align: center; }
+#challenge03 ul > li > .imgBox > img{margin-top: 15px; }
+#challenge03 ul > li > .textBox{width: 294px; height: 120px; border-radius: 120px;  background-color: #e8e8e8; margin-left: 35px; display: table-cell; vertical-align: middle; }
+#challenge03 ul > li > .textBox > h6{font-weight: bold; }
 
 #challenge04 > div{}
 #challenge04_2 > h4{font-size: 36px; text-align: left; margin-bottom: 30px; }
@@ -60,6 +74,8 @@
 
 @media all and (min-width: 480px){
     #greenchallengeBox{}
+    #challenge02 > div > img{margin: 0 auto 40px; }
+    #challenge02 > div > ul{border-radius: 10px; padding: 20px; }
 }
 @media all and (min-width: 768px){
     #greenchallengeBox{}
@@ -76,9 +92,18 @@
     #challenge01 h2{margin: 28px auto 42px; }
     #challenge01 h6{margin-bottom: 36px;}
     
+    #challenge02 > div > img{margin: 0 auto 65px; }
+    #challenge02 > div > ul{border-radius: 16px; padding: 40px; }
+    #challenge02 > div > ul > li{}
+    #challenge02 > div > ul > li > h5{float: left; width: 136px; }
+    #challenge02 > div > ul > li > div{float: right; max-width: 752px; width: 100%; }
+    #challenge02 > div > ul .challengeInfor > li{float: left; width: 33.333333%; height: 236px; margin-left: 22px; padding-bottom: 0; border-radius: 8px; }
+    #challenge02 > div > ul .challengeInfor > li:first-child{margin-left: 0; }
+    #challenge02 > div > ul .challengeInforNumber{width: 52px; height: 44px; line-height: 44px; }
+    
     #challenge03{}
     #challenge03 ul{}
-    #challenge03 ul > li{max-width: 33.333333%; position: relative; margin-bottom: 45px; display: table; }
+    #challenge03 ul > li{float: left; max-width: 50%; position: relative; margin-bottom: 45px; display: table; }
     #challenge03 ul > li > .imgBox{width: 100px; height: 100px; border-radius: 100px; background-color: #037560; border: 3px solid #e8e8e8; position: absolute; margin-top: -20px; left: 25px; text-align: center; }
     #challenge03 ul > li > .imgBox > img{margin-top: 15px; }
     #challenge03 ul > li > .textBox{width: 294px; height: 120px; border-radius: 120px;  background-color: #e8e8e8; margin-left: 35px; display: table-cell; vertical-align: middle; }
@@ -91,8 +116,11 @@
 }
 @media all and (min-width: 1280px){
     #greenchallengeBox{}
-    #greenchallengeBox > header{max-width: 1040px; }
+    #greenchallengeBox > header{max-width: 1080px; padding: 0 20px; }
     #greenchallengeBox > section > div{max-width: 1040px; }
+    #challenge02 > div > ul{padding: 56px; }
+    
+    #challenge03 ul > li{max-width: 33.333333%; }
 }
 
 
