@@ -96,6 +96,7 @@
     #challenge01 h2{}
     #challenge01 h6{}
     
+    #challenge02 > div{padding: 0 0 86px; }
     #challenge02 > div > img{margin: 0 auto 65px; }
     #challenge02 > div > ul{border-radius: 16px; padding: 28px; }
     #challenge02 > div > ul > li{margin-bottom: 50px; }
