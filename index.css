@@ -1,8 +1,18 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}#greenchallengeBox{color: #333; font-weight: normal; letter-spacing: -1px; line-height: 1.5; }
+@font-face {font-family: 'cytiva aktiv bd';font-style: normal;font-weight: 600;src: url(//eventinfo.kr/cytiva/green/fonts/CytivaAktiv_Bd.ttf) format('truetype');}
+@font-face {font-family: 'cytiva aktiv bdlt';font-style: normal;font-weight: 500;src: url(//eventinfo.kr/cytiva/green/fonts/CytivaAktiv_BdIt.ttf) format('truetype');}
+@font-face {font-family: 'cytiva aktiv lt';font-style: normal;font-weight: 300;src: url(//eventinfo.kr/cytiva/green/fonts/CytivaAktiv_It.ttf) format('truetype');}
+@font-face {font-family: 'cytiva aktiv';font-style: normal;font-weight: 400;src: url(//eventinfo.kr/cytiva/green/fonts/CytivaAktiv_Rg.ttf) format('truetype');}
 #greenchallengeBox{color: #333; font-weight: normal; letter-spacing: -1px; line-height: 1.5; }
 
-.clearfix:after{content: ''; display: block; clear: both; }
 
-#greenchallengeBox *{box-sizing: border-box; font-family: 'NotoSansKR'; word-break: keep-all; font-weight: normal; }
+html, body{font-family: 'cytiva aktiv', 'noto sans', 'NotoSansKR', 'Noto Sans KR', sans-serif; }
+.fontNsB{}
+.clearfix:after{content: ''; display: block; clear: both; }
+#greenchallengeBox *{box-sizing: border-box; font-family: 'cytiva aktiv', 'noto sans', 'NotoSansKR', 'Noto Sans KR', sans-serif; word-break: keep-all; font-weight: normal; }
 #greenchallengeBox .hideText{width: 0; height: 0; display: block; overflow: hidden; }
 #greenchallengeBox .bold{font-weight: bold; }
 #greenchallengeBox .medium{font-weight: 500; }
@@ -18,81 +28,94 @@
 #greenchallengeBox {text-align: center;}
 #greenchallengeBox .txt_l{text-align: left; }
 #greenchallengeBox .txt_c{text-align: center; }
-#greenchallengeBox .dispalyIB{display: inline-block; }
-#greenchallengeBox .dispalyB{display: block; }
+#greenchallengeBox .displayIB{display: inline-block; }
+#greenchallengeBox .displayB{display: block; }
 
 #greenchallengeBox p{font-size: 11px; }
 #greenchallengeBox span{font-size: 10px; }
 
-#greenchallengeBox > header{margin: 0 auto; height: 80px; padding-left: 20px; }
-#greenchallengeBox > header > h1{display: table; height: 100%; }
-#greenchallengeBox > header > h1 > a{display: table-cell; vertical-align: middle; }
+#greenchallengeBox > header{margin: 0 auto; height: 65px; background-color: #fff; position: fixed; top: 0; left: 0; width: 100%;box-shadow: 0 3px 3px 0px rgba(0, 0, 0,.1); z-index: 500; }
+#greenchallengeBox > header > h1{height: 100%; max-width: 1040px; margin: 0 auto; width: 100%; padding-left: 8px; text-align: left; }
+#greenchallengeBox > header > h1 > a{display: inline-block; height: 34px; margin-top: 15px; }
 
 #greenchallengeBox > section{padding: 80px 0 60px; overflow: hidden; }
 #greenchallengeBox > section > div{margin: 0 auto; }
+section > div > *{width: 95%; margin: 0 auto; }
+#greenchallengeBox > #challenge02 > div > ul{width: 100%; }
 #greenchallengeBox > section > div > * span{font-size: inherit; }
 
-#greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01_m.png); background-position: center bottom; background-repeat: repeat-x; padding-top: 80px; padding-bottom: 260px; background-color: #e8e8e8; }
-#challenge01 h2{margin: 0 auto 16px; font-size: 35px; }
-#challenge01 h3{font-size: 30px; }
+#greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01_m.png); background-position: center bottom; background-repeat: repeat-x; padding-top: 80px; padding-bottom: 260px; background-color: #e8e8e8; margin-top: 65px; }
+#challenge01 h2{margin: 0 auto 16px; font-size: 34px; }
+#challenge01 h3{font-size: 26px; }
 #challenge01 h5{font-size: 22px; }
-#challenge01 h6{margin-bottom: 26px;font-size: 24px; }
+#challenge01 h6{margin-bottom: 26px;font-size: 16px; }
 
 #greenchallengeBox > #challenge02{background-color: #076251; padding-bottom: 0; }
-#challenge02 h3{font-size: 35px; margin-bottom: 60px; padding: 0 20px; }
-#challenge02 h6{font-size: 28px; padding: 0 20px; }
+#challenge02 h3{font-size: 26px; margin-bottom: 52px; padding: 0; }
+#challenge02 h6{font-size: 24px; padding: 0; }
+#challenge02 > div > h6{padding: 0 20px; font-size: 17px; }
 #challenge02 > div > img{margin: 0 auto 20px; display: block; width: 100%; max-width: 679px; }
 #challenge02 > div > span{background-image: url(./cytiva_img_02_m.png); background-repeat: no-repeat; width: 100%; height: 400px; background-size: contain; display: block; background-position: center center; }
 #challenge02 > div > ul{background-color: rgba(0, 136, 111, .5); padding: 100px 0; }
-#challenge02 > div > ul > li{text-align: center; margin-bottom: 100px; }
+#challenge02 > div > ul > li{text-align: center; margin-bottom: 68px; }
 #challenge02 > div > ul > li:last-child{margin-bottom: 0; }
-#challenge02 > div > ul > li > h5{background-color: #18181b; border-radius: 50px; color: #fff; display: inline-block; font-size: 32px; width: 160px; height: 56px; line-height: 60px; margin-bottom: 30px; font-weight: 500; font-size: 32px; }
+#challenge02 > div > ul > li > h5{background-color: #18181b; border-radius: 50px; color: #fff; display: inline-block; width: 150px; height: 42px; line-height: 48px; margin-bottom: 20px; font-weight: 500; font-size: 22px; }
 #challenge02 > div > ul > li:after{content: ''; display: block; clear: both; }
 #challenge02 > div > ul > li > div{padding: 0 20px; }
 #challenge02 > div > ul > li > div > h6{display: inline-block; }
-#challenge02 > div > ul > li > div > h6.color2{background-color: #fdf45b; border-radius: 50px; font-size: 30px; margin-bottom: 36px; padding: 4px 12px; }
-#challenge02 > div > ul > li > div > h6 > p{font-size: 28px; }
-#challenge02 > div > ul > li > div > h6.color2 > span{font-size: 30px; }
-#challenge02 > div > ul .challengeInfor{}
-#challenge02 > div > ul .challengeInfor > li{background-color: rgba(235, 255, 175,.3); border-radius: 4px; width: 100%; margin: 18px auto; padding-bottom: 12px; max-width: 320px; }
-#challenge02 > div > ul .challengeInfor > li img{max-width: 165px; width: 80%; object-fit: contain; }
-#challenge02 > div > ul .challengeInfor > li img:first-child{width: 20px; }
-#challenge02 > div > ul .challengeInforNumber{background-color: #076251; color: #fff; margin: 0 auto 20px; width: 62px; height: 52px; text-align: center; line-height: 52px; padding: 0; }
-#challenge02 > div > ul > li > div > p{font-size: 28px;  }
-#challenge02 > div > ul > li > div > span{font-size: 26px; }
+#challenge02 > div > ul > li > div > h6.color2{background-color: #fdf45b; border-radius: 50px; font-size: 26px; margin-bottom: 36px; padding: 4px 32px; min-width: 280px; }
+#challenge02 > div > ul > li > div > h6 > p{font-size: 20px; }
+#challenge02 > div > ul > li > div > h6.color2 > span{display: block; font: inherit; }
+#challenge02 > div > ul > li > div > h6.color2 > span > span{font-size: 22px; }
+#challenge02 > div > ul .challengeInfor{margin: 0 auto; }
+#challenge02 > div > ul .challengeInfor > li{background-color: rgba(235, 255, 175,.3); border-radius: 4px; width: 100%; margin: 0 auto 28px; padding-bottom: 24px; max-width: 320px; text-align: center; }
+#challenge02 > div > ul .challengeInfor > li > a{max-width: 165px; width: 100%; object-fit: contain; margin-top: 12px; }
+#challenge02 > div > ul .challengeInfor > li:first-child img{width: 20px; }
+#challenge02 > div > ul .challengeInforNumber{background-color: #076251; color: #fff; margin: 0 auto 24px; width: 62px; height: 52px; text-align: center; line-height: 52px; padding: 0; }
+#challenge02 > div > ul > li > div > p{font-size: 20px; margin: 20px auto 40px; }
+#challenge02 > div > ul > li > div > span{font-size: 18px; }
 
 #challenge03{background-color: #99cfc5; }
-#challenge03 h3{margin-bottom: 52px; font-size: 35px; font-weight: 500; }
+#challenge03 h3{margin-bottom: 52px; font-size: 28px; font-weight: 500; }
 #challenge03 ul{}
-#challenge03 ul > li{min-width: 33.333333%; max-width: 320px; margin: 0 auto 40px; height: 120px; }
+#challenge03 ul > li{min-width: 33.333333%; max-width: 320px; margin: 0 auto 48px; height: 100px; }
 #challenge03 ul > li span{text-align: center; }
-#challenge03 > div > span{display: block; font-size: 24px; font-weight: lighter; }
+#challenge03 > div > span{display: block; font-size: 18px; font-weight: lighter; }
 #challenge03 ul > li > .imgBox{width: 100px; height: 100px; border-radius: 100px; background-color: #037560; border: 3px solid #e8e8e8; position: absolute; margin-top: -20px; left: 50%; margin-left: -170px; text-align: center; }
 #challenge03 ul > li > .imgBox > img{margin-top: 15px; }
-#challenge03 ul > li > .textBox{max-width: 304px; width: 100%; height: 120px; border-radius: 120px;  background-color: #e8e8e8; display: table; margin: 0 auto; margin-left: 20px; }
-#challenge03 ul > li > .textBox > h6{font-weight: bold; display: table-cell; vertical-align: middle; font-size: 28px; padding-left: 20px; color: #18181b; }
-#challenge03 ul > li > .textBox > h6 > span{font-size: 20px; }
+#challenge03 ul > li > .textBox{max-width: 300px; width: 100%; height: 100px; border-radius: 120px;  background-color: #e8e8e8; display: table; margin: 0 auto; margin-left: 20px; }
+#challenge03 ul > li > .textBox > h6{font-weight: bold; display: table-cell; vertical-align: middle; font-size: 22px; padding-left: 20px; color: #18181b; }
+#challenge03 ul > li > .textBox > h6 > span{font-size: 18px; }
 
 #challenge04 > div{padding: 0 20px; }
-#challenge04 > div > h4{font-size: 36px; }
+#challenge04 > div > h4{font-size: 26px; }
 #challenge04 > div > img{margin: 40px auto; width: 100%; max-width: 480px; display: block; }
-#challenge04 > div > p{font-size: 28px; margin-bottom: 30px; }
-#challenge04 > div > a{border-bottom: 1px solid #18181b; display: inline-block; }
+#challenge04 > div > p{font-size: 18px; margin-bottom: 30px; }
+#challenge04 > div > a{width: auto; border-bottom: 1px solid #18181b; display: inline-block; }
 #challenge04 > div > a > p{font-size: 20px; }
 
 #challenge05{background-color: #076251; }
 #challenge05 > div{padding: 0 20px; }
-#challenge05 > div > p{opacity: .7; font-size: 24px; margin-bottom: 50px; }
-#challenge05 > div > p > img{margin-right: 4px; vertical-align: text-top; }
+#challenge05 > div > p{opacity: .7; font-size: 22px; margin-bottom: 50px; }
+#challenge05 > div > p > img{margin-right: 4px; vertical-align: middle; }
 #challenge05 > div > ul{opacity: .7; padding-left: 20px; }
-#challenge05 > div > ul > li{font-weight: lighter; font-size: 22px; list-style: outside; }
+#challenge05 > div > ul > li{font-weight: lighter; font-size: 18px; list-style: outside; }
+
+#greenchallengeBox > footer{background-color: #000; padding: 50px 0; }
+#greenchallengeBox > footer > ul{margin-bottom: 24px; }
+#greenchallengeBox > footer > ul > li{display: inline-block; margin: 0 8px; }
+#greenchallengeBox > footer > ul > li > a{font-size: 16px; color: #fff; text-align: center; display: block; margin: 0 auto; font-weight: 300; }
+#greenchallengeBox > footer > p{font-size: 20px; }
 
 @media all and (min-width: 640px){
     #greenchallengeBox{}
     #greenchallengeBox > section{padding: 72px 0; }
-    #greenchallengeBox > section > div{width: 90%; }
+    #greenchallengeBox > section > div{width: 80%; max-width: 680px; }
+    #greenchallengeBox > header{height: 80px; }
+    #greenchallengeBox > header > h1{padding-left: 16px;}
+    #greenchallengeBox > header > h1 > a{margin-top: 22px; }
     
-    #greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01_p.png); padding-top: 80px; padding-bottom: 390px; }
+    #greenchallengeBox > #challenge01{background-image: url(./cytiva_img_01_p.png); padding-top: 80px; padding-bottom: 390px; margin-top: 80px; }
     #challenge01 h2{}
     #challenge01 h6{}
     
@@ -100,54 +123,62 @@
     #challenge02 > div > img{margin: 0 auto 65px; }
     #challenge02 > div > ul{border-radius: 16px; padding: 28px; }
     #challenge02 > div > ul > li{margin-bottom: 50px; }
-    #challenge02 > div > ul > li > h5{width: 130px; font-size: 22px; height: 42px; line-height: 46px; }
-    #challenge02 > div > ul > li > div{max-width: 752px; width: 100%; padding: 0; }
+    #challenge02 > div > ul > li > h5{width: 130px; font-size: 20px; height: 42px; line-height: 46px; }
+    #challenge02 > div > ul > li > div{max-width: 752px; width: 100%; padding: 0; margin: 0 auto; }
     #challenge02 > div > ul > li > div{}
     #challenge02 > div > ul > li > div > h6.color2{font-size: 24px; }
-    #challenge02 > div > ul > li > div > h6.color2 > span{font-size: 20px; }
-    #challenge02 > div > ul .challengeInfor {}
-    #challenge02 > div > ul .challengeInfor > li{vertical-align: middle; float: left; width: 169px; height: 200px; margin-left: 6px; padding-bottom: 0; border-radius: 6px; margin-top: 0; }
+    #challenge02 > div > ul > li > div > h6.color2 > span{display: inline-block;}
+    #challenge02 > div > ul > li > div > h6.color2 > span > span{font-size: 18px; }
+    #challenge02 > div > ul .challengeInfor {width: 520px; }
+    #challenge02 > div > ul .challengeInfor > li{vertical-align: middle; float: left; width: 169px; height: 220px; margin-left: 6px; padding-bottom: 0; border-radius: 6px; margin-top: 0; }
     #challenge02 > div > ul .challengeInfor > li:first-child{margin-left: 0; }
-    #challenge02 > div > ul .challengeInforNumber{width: 52px; height: 44px; line-height: 44px; }
-    #challenge02 > div > span{background-image: url(./cytiva_img_02_p.png); }
-    #challenge02 h6{font-size: 18px; padding: 0 8px; }
-    #challenge02 > div > ul > li > div > p{font-size: 20px; margin-bottom: 16px; }
+    #challenge02 > div > ul .challengeInforNumber{width: 52px; height: 44px; line-height: 44px; margin: 0 auto 20px; }
+    #challenge02 > div > span{background-image: url(./cytiva_img_02_p.png); margin-bottom: 60px; }
+    #challenge02 h6{font-size: 18px; padding: 0; }
+    #challenge02 > div > ul > li > div > p{font-size: 20px; margin: 0 auto 16px; }
     #challenge02 > div > ul > li > div > span{font-size: 18px; }
+    #challenge02 > div > ul > li > div > h6{font-size: 24px; }
+    #challenge02 > div > ul > li > div > h6 > p{font-size: 18px; }
     
     #challenge03{}
     #challenge03 h3{font-size: 48px; }
-    #challenge03 ul{}
-    #challenge03 ul > li{float: left; width: 45%; margin: 0 2.5%; position: relative; margin-bottom: 18px; }
+    #challenge03 ul{margin: 0 auto 20px; }
+    #challenge03 ul > li{float: left; width: 45%; margin: 0 2.5%; position: relative; margin-bottom: 18px; max-width: 100%; }
     #challenge03 ul > li > .imgBox{width: 80px; height: 80px; margin-left: -150px; }
     #challenge03 ul > li > .imgBox > img{margin-top: 12px; width: 45px; height: 45px; }
-    #challenge03 ul > li > .textBox{width: 220px; height: 86px;}
+    #challenge03 ul > li > .textBox{width: 220px; height: 86px; margin: 0 auto; }
     #challenge03 ul > li > .textBox > h6{font-size: 22px; padding-left: 16px; }
     #challenge03 ul > li > .textBox > h6 > span{font-size: 18px; }
     
     #challenge04{}
     #challenge04 div{}
     #challenge04 > img{}
+    
+    #greenchallengeBox > footer > ul > li > a{font-size: 20px; }
+    #greenchallengeBox > footer > ul > li{margin: 0 16px; }
 }
 @media all and (min-width: 1040px){
     #greenchallengeBox{}
     #greenchallengeBox > section{padding: 72px 0; }
     #greenchallengeBox > section > div{width: 100%; }
     
-    #greenchallengeBox > header{max-width: 1040px; padding: 0 20px; }
+    #greenchallengeBox > header{padding: 0 20px; }
     #greenchallengeBox > section > div{max-width: 1040px; }
-    #challenge01 > div > h3{font-size: 48px; }
-    #challenge01 > div > h2{font-size: 72px; }
+    #challenge01 > div > h3{font-size: 42px; }
+    #challenge01 > div > h2{font-size: 64px; }
     #challenge01 > div > h6{font-size: 24px; }
     #challenge01 > div > h5{font-size: 26px; }
     
-    #challenge02 > div > h3{font-size: 48px; }
+    #challenge02 > div > h3{font-size: 42px; }
+    #challenge02 > div > h6{font-size: 22px; }
     #challenge02 > div > ul{padding: 56px; }
     #challenge02 > div > ul .challengeInfor {width: 752px; }
     #challenge02 > div > ul .challengeInfor > li{width: 236px; height: 236px; margin-left: 18px; border-radius: 8px; }
     #challenge02 > div > ul > li{margin-bottom: 30px; }
     #challenge02 > div > ul > li > h5{float: left; margin-bottom: 0; }
     #challenge02 > div > ul > li > div{float: right; text-align: left; }
-    #challenge02 > div > ul > li > div > h6 > p{font-size: 20px; }
+    #challenge02 > div > ul > li > div > h6 > p{font-size: 20px; display: inline-block; }
+    #challenge02 > div > ul > li > div > h6.color2{max-width: 500px; }
     #challenge02 > div > span{height: 490px; }
     #challenge02 h6{font-size: 24px; }
     #challenge02 .challengeGiveaway{}
@@ -155,22 +186,23 @@
     #challenge02 .challengeGiveaway > div{float: right;margin-top: 20px; }
     
     #challenge03 ul > li{max-width: 33.333333%; margin: 24px 0; padding-left: 25px; }
-    #challenge03 ul > li > .imgBox{margin-left: -165px; width: 100px; height: 100px; }
+    #challenge03 ul > li > .imgBox{margin-left: -160px; width: 100px; height: 100px; }
     #challenge03 ul > li > .imgBox > img{width: auto; height: auto; }
-    #challenge03 ul > li > .textBox{width: 294px; height: 120px; }
-    #challenge03 ul > li > .textBox > h6{font-size: 24px; }
+    #challenge03 ul > li > .textBox{width: 280px; height: 120px; }
     #challenge03 > div > span{font-size: 18px; }
     
     #challenge04 > div{}
     #challenge04 > div > *{text-align: left; float: left; width: 490px; }
     #challenge04 > div > img{float: right; width: auto; margin: 0 auto 100px; }
-    #challenge04 > div > h4{font-size: 36px; margin-bottom: 20px; }
+    #challenge04 > div > h4{font-size: 34px; margin-bottom: 20px; }
     #challenge04 > div > p{font-size: 20px; margin-bottom: 20px; }
     #challenge04 > div > a{width: auto; }
     
-    #challenge05 > div{}
+    #challenge05 > div{padding: 0; }
     #challenge05 > div > p{float: left; width: 230px; }
-    #challenge05 > div > ul{float: left; padding-left: 0; }
+    #challenge05 > div > ul{width: auto; float: left; padding-left: 0; }
+    
+    #greenchallengeBox > footer > ul > li{margin: 0 34px; }
 }
 
 
